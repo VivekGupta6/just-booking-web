@@ -31,9 +31,12 @@ export default async function NewsPage({ searchParams }: NewsPageProps) {
     categoryFilter && categoryFilter in BLOG_CATEGORIES;
 
   const featured = getFeaturedBlog();
-  const latest = getLatestBlogs(4);
-  const trending = getTrendingBlogs(4);
-  const categorySections = getCategorySections();
+  const shownIds = new Set(featured ? [featured.id] : []);
+  const latest = getLatestBlogs(4, shownIds);
+  latest.forEach((blog) => shownIds.add(blog.id));
+  const trending = getTrendingBlogs(4, shownIds);
+  trending.forEach((blog) => shownIds.add(blog.id));
+  const categorySections = getCategorySections(shownIds);
 
   const filteredBlogs = isFiltered
     ? getBlogsByCategory(categoryFilter)

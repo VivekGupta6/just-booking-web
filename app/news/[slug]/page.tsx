@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Clock, ChevronLeft } from "lucide-react";
@@ -6,7 +7,6 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import BlogCard from "@/components/news/BlogCard";
 import BlogCta from "@/components/news/BlogCta";
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
 import {
   getBlogBySlug,
   getAllBlogSlugs,
@@ -97,15 +97,15 @@ export default async function BlogArticlePage({ params }: BlogPageProps) {
           <div className="flex w-full justify-center">
             <div className="relative aspect-[16/10] w-full max-w-[560px] overflow-hidden rounded-2xl bg-placeholder sm:max-w-[600px]">
               {blog.heroImage ? (
-                // eslint-disable-next-line @next/next/no-img-element
-                <img
+                <Image
                   src={blog.heroImage}
-                  alt=""
-                  className="h-full w-full object-cover"
+                  alt={blog.title}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 600px"
+                  className="object-cover"
+                  priority
                 />
-              ) : (
-                <ImagePlaceholder className="h-full w-full rounded-2xl" />
-              )}
+              ) : null}
             </div>
           </div>
 

@@ -40,7 +40,7 @@ export default function BlogCard({
           {blog.heroImage ? (
             <Image
               src={blog.heroImage}
-              alt=""
+              alt={blog.title}
               fill
               sizes={
                 isFeatured

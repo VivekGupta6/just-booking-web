@@ -53,24 +53,40 @@ export function getFeaturedBlog(): Blog | undefined {
   return BLOGS.find((blog) => blog.featured) ?? BLOGS[0];
 }
 
-export function getTrendingBlogs(limit = 4): Blog[] {
-  return BLOGS.filter((blog) => blog.trending).slice(0, limit);
+export function getTrendingBlogs(
+  limit = 4,
+  excludeIds: Iterable<string> = [],
+): Blog[] {
+  const excluded = new Set(excludeIds);
+  return BLOGS.filter((blog) => blog.trending && !excluded.has(blog.id)).slice(
+    0,
+    limit,
+  );
 }
 
-export function getLatestBlogs(limit = 4): Blog[] {
-  return getAllBlogs().slice(0, limit);
+export function getLatestBlogs(
+  limit = 4,
+  excludeIds: Iterable<string> = [],
+): Blog[] {
+  const excluded = new Set(excludeIds);
+  return getAllBlogs()
+    .filter((blog) => !excluded.has(blog.id))
+    .slice(0, limit);
 }
 
 export function getBlogsByCategory(category: BlogCategory): Blog[] {
   return BLOGS.filter((blog) => blog.category === category);
 }
 
-export function getCategorySections(): {
+export function getCategorySections(
+  excludeIds: Iterable<string> = [],
+): {
   category: BlogCategory;
   label: string;
   description: string;
   blogs: Blog[];
 }[] {
+  const excluded = new Set(excludeIds);
   const sectionMeta: Record<
     BlogCategory,
     { description: string; maxItems?: number }
@@ -105,12 +121,16 @@ export function getCategorySections(): {
     },
   };
 
-  return (Object.keys(BLOG_CATEGORIES) as BlogCategory[]).map((category) => ({
-    category,
-    label: BLOG_CATEGORIES[category],
-    description: sectionMeta[category].description,
-    blogs: getBlogsByCategory(category),
-  }));
+  return (Object.keys(BLOG_CATEGORIES) as BlogCategory[])
+    .map((category) => ({
+      category,
+      label: BLOG_CATEGORIES[category],
+      description: sectionMeta[category].description,
+      blogs: getBlogsByCategory(category).filter(
+        (blog) => !excluded.has(blog.id),
+      ),
+    }))
+    .filter((section) => section.blogs.length > 0);
 }
 
 export function getRelatedBlogs(blog: Blog, limit = 3): Blog[] {

@@ -1,6 +1,6 @@
 "use client";
 
-import ImagePlaceholder from "@/components/ui/ImagePlaceholder";
+import Image from "next/image";
 import { scrollToSection } from "@/lib/gsap";
 
 export default function PromoHeroCard() {
@@ -15,7 +15,16 @@ export default function PromoHeroCard() {
       >
         <div className="grid grid-cols-1 lg:grid-cols-2">
           <div className="border-border-green p-4 sm:p-5 md:p-6 lg:border-r lg:p-7">
-            <ImagePlaceholder className="aspect-[16/10] w-full sm:aspect-[4/3] lg:aspect-[5/4]" />
+            <div className="relative aspect-[16/10] w-full overflow-hidden rounded-2xl sm:aspect-[4/3] lg:aspect-[5/4]">
+              <Image
+                src="/assets/promo/stays-hero.jpg"
+                alt="Luxury hotel pool overlooking the ocean at sunset"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+                priority
+              />
+            </div>
           </div>
 
           <div className="flex flex-col items-center justify-center border-t border-border-green px-5 py-8 text-center sm:px-8 sm:py-10 md:border-t md:px-10 md:py-12 lg:border-t-0 lg:p-10">
