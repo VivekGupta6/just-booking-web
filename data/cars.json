@@ -1,0 +1,98 @@
+[
+  {
+    "id": "germany",
+    "destination": "Germany",
+    "title": "Car rental in Germany",
+    "blurb": "Explore Berlin, Munich, Frankfurt and the Autobahn with flexible hire options.",
+    "fromPrice": "₹ 6,420",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["Berlin", "Munich", "Frankfurt"],
+    "link": "https://www.kayak.co.in/cars/Germany-c145",
+    "photo": "/assets/cars/destinations/germany.jpg"
+  },
+  {
+    "id": "brazil",
+    "destination": "Brazil",
+    "title": "Car rental in Brazil",
+    "blurb": "Pick up in Rio, São Paulo or beach cities and drive at your own pace.",
+    "fromPrice": "₹ 7,850",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["Rio de Janeiro", "São Paulo", "Brasília"],
+    "link": "https://www.kayak.co.in/cars/Brazil-c42",
+    "photo": "/assets/cars/destinations/brazil.jpg"
+  },
+  {
+    "id": "france",
+    "destination": "France",
+    "title": "Car rental in France",
+    "blurb": "From Paris airports to the countryside — compare deals across France.",
+    "fromPrice": "₹ 13,875",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["Paris", "Nice", "Lyon"],
+    "link": "https://www.kayak.co.in/cars/France-c73",
+    "photo": "/assets/cars/destinations/france.jpg"
+  },
+  {
+    "id": "united-kingdom",
+    "destination": "United Kingdom",
+    "title": "Car rental in the United Kingdom",
+    "blurb": "London, Edinburgh and beyond — find self-drive hire across the UK.",
+    "fromPrice": "₹ 9,198",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["London", "Edinburgh", "Manchester"],
+    "link": "https://www.kayak.co.in/cars/United-Kingdom-c225",
+    "photo": "/assets/cars/destinations/united-kingdom.jpg"
+  },
+  {
+    "id": "canada",
+    "destination": "Canada",
+    "title": "Car rental in Canada",
+    "blurb": "Road-trip Toronto, Vancouver and national parks with airport pick-ups.",
+    "fromPrice": "₹ 8,640",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["Toronto", "Vancouver", "Montreal"],
+    "link": "https://www.kayak.co.in/cars/Canada-c43",
+    "photo": "/assets/cars/destinations/canada.jpg"
+  },
+  {
+    "id": "australia",
+    "destination": "Australia",
+    "title": "Car rental in Australia",
+    "blurb": "Sydney, Melbourne and coastal drives — compare hire cars nationwide.",
+    "fromPrice": "₹ 10,220",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["Sydney", "Melbourne", "Brisbane"],
+    "link": "https://www.kayak.co.in/cars/Australia-c15",
+    "photo": "/assets/cars/destinations/australia.jpg"
+  },
+  {
+    "id": "new-zealand",
+    "destination": "New Zealand",
+    "title": "Car rental in New Zealand",
+    "blurb": "Auckland to the South Island — ideal for scenic self-drive itineraries.",
+    "fromPrice": "₹ 11,480",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["Auckland", "Christchurch", "Wellington"],
+    "link": "https://www.kayak.co.in/cars/New-Zealand-c168",
+    "photo": "/assets/cars/destinations/new-zealand.jpg"
+  },
+  {
+    "id": "united-arab-emirates",
+    "destination": "United Arab Emirates",
+    "title": "Car rental in the UAE",
+    "blurb": "Dubai and Abu Dhabi airport deals for city runs and desert day trips.",
+    "fromPrice": "₹ 5,246",
+    "priceLabel": "from",
+    "dates": "25/8 – 30/8",
+    "cities": ["Dubai", "Abu Dhabi", "Sharjah"],
+    "link": "https://www.kayak.co.in/cars/United-Arab-Emirates-c226",
+    "photo": "/assets/cars/destinations/uae.jpg"
+  }
+]

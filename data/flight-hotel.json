@@ -1,0 +1,261 @@
+[
+  {
+    "id": "france",
+    "title": "Flight + Hotel to France",
+    "routeLabel": "India → France",
+    "dates": "25/8 – 30/8",
+    "packagePrice": "₹ 1,48,900",
+    "priceLabel": "Package from",
+    "nights": 5,
+    "link": "https://www.kayak.co.in/explore/DEL-PAR/2026-08-25/2026-08-30",
+    "flight": {
+      "origin": "New Delhi (DEL)",
+      "destination": "Paris (CDG)",
+      "airline": "Air India",
+      "stops": "direct",
+      "duration": "10h 30m",
+      "outbound": {
+        "departTime": "12:10",
+        "arriveTime": "19:15",
+        "from": "DEL",
+        "to": "CDG"
+      },
+      "inbound": {
+        "departTime": "20:45",
+        "arriveTime": "10:40+1",
+        "from": "CDG",
+        "to": "DEL"
+      },
+      "logo": "/assets/flights/air-india.png"
+    },
+    "stay": {
+      "name": "Hotel Plaza Elysées",
+      "neighborhood": "8th arrondissement, Paris",
+      "rating": 8.2,
+      "ratingLabel": "Very good",
+      "photo": "/assets/hotels/france.jpg"
+    }
+  },
+  {
+    "id": "germany",
+    "title": "Flight + Hotel to Germany",
+    "routeLabel": "India → Germany",
+    "dates": "25/8 – 30/8",
+    "packagePrice": "₹ 89,400",
+    "priceLabel": "Package from",
+    "nights": 5,
+    "link": "https://www.kayak.co.in/explore/DEL-FRA/2026-08-25/2026-08-30",
+    "flight": {
+      "origin": "New Delhi (DEL)",
+      "destination": "Frankfurt (FRA)",
+      "airline": "Etihad Airways",
+      "stops": "1 stop",
+      "duration": "17h 45m",
+      "outbound": {
+        "departTime": "04:50",
+        "arriveTime": "19:05",
+        "from": "DEL",
+        "to": "FRA"
+      },
+      "inbound": {
+        "departTime": "10:55",
+        "arriveTime": "03:10+1",
+        "from": "FRA",
+        "to": "DEL"
+      },
+      "logo": "/assets/flights/etihad.png"
+    },
+    "stay": {
+      "name": "Gasthaus und Pension Halli-Galli",
+      "neighborhood": "Vogtei, Germany",
+      "rating": 8.3,
+      "ratingLabel": "Very good",
+      "photo": "/assets/hotels/germany.jpg"
+    }
+  },
+  {
+    "id": "united-kingdom",
+    "title": "Flight + Hotel to the United Kingdom",
+    "routeLabel": "India → United Kingdom",
+    "dates": "25/8 – 30/8",
+    "packagePrice": "₹ 96,800",
+    "priceLabel": "Package from",
+    "nights": 5,
+    "link": "https://www.kayak.co.in/explore/DEL-LON/2026-08-25/2026-08-30",
+    "flight": {
+      "origin": "New Delhi (DEL)",
+      "destination": "London (LGW)",
+      "airline": "Gulf Air",
+      "stops": "1 stop",
+      "duration": "21h 42m",
+      "outbound": {
+        "departTime": "04:55",
+        "arriveTime": "06:55+1",
+        "from": "DEL",
+        "to": "LGW"
+      },
+      "inbound": {
+        "departTime": "10:40",
+        "arriveTime": "04:05+1",
+        "from": "LGW",
+        "to": "DEL"
+      },
+      "logo": "/assets/flights/gulf-air.png"
+    },
+    "stay": {
+      "name": "Four Points Flex by Sheraton London Shoreditch East",
+      "neighborhood": "Tower Hamlets, London",
+      "rating": 8.0,
+      "ratingLabel": "Very good",
+      "photo": "/assets/hotels/london.jpg"
+    }
+  },
+  {
+    "id": "canada",
+    "title": "Flight + Hotel to Canada",
+    "routeLabel": "India → Canada",
+    "dates": "25/8 – 30/8",
+    "packagePrice": "₹ 1,22,600",
+    "priceLabel": "Package from",
+    "nights": 5,
+    "link": "https://www.kayak.co.in/explore/DEL-YTO/2026-08-25/2026-08-30",
+    "flight": {
+      "origin": "New Delhi (DEL)",
+      "destination": "Toronto (YYZ)",
+      "airline": "United Airlines",
+      "stops": "1 stop",
+      "duration": "40h 19m",
+      "outbound": {
+        "departTime": "23:35",
+        "arriveTime": "06:18+2",
+        "from": "DEL",
+        "to": "YYZ"
+      },
+      "inbound": {
+        "departTime": "19:35",
+        "arriveTime": "21:30+2",
+        "from": "YTZ",
+        "to": "DEL"
+      },
+      "logo": "/assets/flights/united.png"
+    },
+    "stay": {
+      "name": "Delta Hotels by Marriott Toronto Airport & Conference Centre",
+      "neighborhood": "Etobicoke, Toronto",
+      "rating": 8.2,
+      "ratingLabel": "Very good",
+      "photo": "/assets/hotels/canada.jpg"
+    }
+  },
+  {
+    "id": "australia",
+    "title": "Flight + Hotel to Australia",
+    "routeLabel": "India → Australia",
+    "dates": "25/8 – 30/8",
+    "packagePrice": "₹ 1,28,400",
+    "priceLabel": "Package from",
+    "nights": 5,
+    "link": "https://www.kayak.co.in/explore/DEL-SYD/2026-08-25/2026-08-30",
+    "flight": {
+      "origin": "New Delhi (DEL)",
+      "destination": "Sydney (SYD)",
+      "airline": "Air India",
+      "stops": "direct",
+      "duration": "12h 55m",
+      "outbound": {
+        "departTime": "02:00",
+        "arriveTime": "19:05",
+        "from": "DEL",
+        "to": "SYD"
+      },
+      "inbound": {
+        "departTime": "20:35",
+        "arriveTime": "05:00+1",
+        "from": "SYD",
+        "to": "DEL"
+      },
+      "logo": "/assets/flights/air-india.png"
+    },
+    "stay": {
+      "name": "Travelodge Hotel Sydney Airport",
+      "neighborhood": "Sydney",
+      "rating": 8.3,
+      "ratingLabel": "Very good",
+      "photo": "/assets/hotels/australia.jpg"
+    }
+  },
+  {
+    "id": "new-zealand",
+    "title": "Flight + Hotel to New Zealand",
+    "routeLabel": "India → New Zealand",
+    "dates": "25/8 – 30/8",
+    "packagePrice": "₹ 1,41,200",
+    "priceLabel": "Package from",
+    "nights": 5,
+    "link": "https://www.kayak.co.in/explore/DEL-AKL/2026-08-25/2026-08-30",
+    "flight": {
+      "origin": "New Delhi (DEL)",
+      "destination": "Auckland (AKL)",
+      "airline": "Malaysia Airlines",
+      "stops": "1 stop",
+      "duration": "34h 37m",
+      "outbound": {
+        "departTime": "23:00",
+        "arriveTime": "11:25+2",
+        "from": "DEL",
+        "to": "AKL"
+      },
+      "inbound": {
+        "departTime": "13:00",
+        "arriveTime": "21:50+1",
+        "from": "AKL",
+        "to": "DEL"
+      },
+      "logo": "/assets/flights/malaysia-airlines.png"
+    },
+    "stay": {
+      "name": "Holiday Inn Express Auckland City Centre By IHG",
+      "neighborhood": "Central Business District, Auckland",
+      "rating": 8.7,
+      "ratingLabel": "Very good",
+      "photo": "/assets/hotels/new-zealand.jpg"
+    }
+  },
+  {
+    "id": "brazil",
+    "title": "Flight + Hotel to Brazil",
+    "routeLabel": "India → Brazil",
+    "dates": "25/8 – 30/8",
+    "packagePrice": "₹ 2,12,500",
+    "priceLabel": "Package from",
+    "nights": 5,
+    "link": "https://www.kayak.co.in/explore/DEL-RIO/2026-08-25/2026-08-30",
+    "flight": {
+      "origin": "New Delhi (DEL)",
+      "destination": "Rio de Janeiro (GIG)",
+      "airline": "ITA Airways",
+      "stops": "1 stop",
+      "duration": "34h 35m",
+      "outbound": {
+        "departTime": "03:00",
+        "arriveTime": "05:05+1",
+        "from": "DEL",
+        "to": "GIG"
+      },
+      "inbound": {
+        "departTime": "14:25",
+        "arriveTime": "01:10+2",
+        "from": "GIG",
+        "to": "DEL"
+      },
+      "logo": "/assets/flights/ita-airways.png"
+    },
+    "stay": {
+      "name": "Ibis Copacabana Posto 5",
+      "neighborhood": "Copacabana, Rio de Janeiro",
+      "rating": 8.0,
+      "ratingLabel": "Very good",
+      "photo": "/assets/hotels/brazil.jpg"
+    }
+  }
+]

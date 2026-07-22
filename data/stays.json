@@ -1,0 +1,79 @@
+[
+  {
+    "id": "london",
+    "name": "Four Points Flex by Sheraton London Shoreditch East",
+    "location": "London, England, United Kingdom",
+    "neighborhood": "Tower Hamlets, London",
+    "dates": "25/8 – 30/8",
+    "rating": 8.0,
+    "ratingLabel": "Very good",
+    "link": "https://share.google/2RYDwnFTX72Zyhx9e",
+    "photo": "/assets/hotels/london.jpg"
+  },
+  {
+    "id": "canada",
+    "name": "Delta Hotels by Marriott Toronto Airport & Conference Centre",
+    "location": "Canada",
+    "neighborhood": "Etobicoke, Toronto",
+    "dates": "25/8 – 30/8",
+    "rating": 8.2,
+    "ratingLabel": "Very good",
+    "link": "https://share.google/BR72kychimRu8A5cm",
+    "photo": "/assets/hotels/canada.jpg"
+  },
+  {
+    "id": "australia",
+    "name": "Travelodge Hotel Sydney Airport",
+    "location": "Australia",
+    "neighborhood": "Sydney",
+    "dates": "25/8 – 30/8",
+    "rating": 8.3,
+    "ratingLabel": "Very good",
+    "link": "https://share.google/r19q0oTeIIgfNZ0nc",
+    "photo": "/assets/hotels/australia.jpg"
+  },
+  {
+    "id": "germany",
+    "name": "Gasthaus und Pension Halli-Galli",
+    "location": "Vogtei, Germany",
+    "neighborhood": "Vogtei, Germany",
+    "dates": "25/8 – 30/8",
+    "rating": 8.3,
+    "ratingLabel": "Very good",
+    "link": "https://share.google/D8UHxPIMphNCYTfVr",
+    "photo": "/assets/hotels/germany.jpg"
+  },
+  {
+    "id": "new-zealand",
+    "name": "Holiday Inn Express Auckland City Centre By IHG",
+    "location": "New Zealand",
+    "neighborhood": "Central Business District, Auckland",
+    "dates": "25/8 – 30/8",
+    "rating": 8.7,
+    "ratingLabel": "Very good",
+    "link": "https://share.google/bIjcnaS2fynU1GUKA",
+    "photo": "/assets/hotels/new-zealand.jpg"
+  },
+  {
+    "id": "france",
+    "name": "Hotel Plaza Elysées",
+    "location": "France",
+    "neighborhood": "8th arrondissement, Paris",
+    "dates": "25/8 – 30/8",
+    "rating": 8.2,
+    "ratingLabel": "Very good",
+    "link": "https://share.google/bKoyf4UZUggtXhwWv",
+    "photo": "/assets/hotels/france.jpg"
+  },
+  {
+    "id": "brazil",
+    "name": "Ibis Copacabana Posto 5",
+    "location": "Brazil",
+    "neighborhood": "Copacabana, Rio de Janeiro",
+    "dates": "25/8 – 30/8",
+    "rating": 8.0,
+    "ratingLabel": "Very good",
+    "link": "https://share.google/Uju2SQD2krF6fVMxc",
+    "photo": "/assets/hotels/brazil.jpg"
+  }
+]
