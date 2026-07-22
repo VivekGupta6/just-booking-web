@@ -109,30 +109,43 @@ export default function Footer() {
               Popular destinations
             </h2>
             <p className="mt-1 text-xs text-white/60">
-              Flights · Hotels · Hire cars
+              Hotels · Flights · Car hire · Trip planning
             </p>
             <ul className="mt-4 flex flex-wrap gap-x-1 gap-y-2">
-              {FOOTER_DESTINATIONS.map((destination, index) => (
-                <li
-                  key={destination.label}
-                  className="inline-flex items-center"
-                >
-                  <a
-                    href={destination.href}
-                    onClick={(event) =>
-                      handleSectionLink(event, destination.href)
-                    }
-                    className="cursor-pointer text-sm text-white/75 transition-colors duration-200 hover:text-bright-green"
+              {FOOTER_DESTINATIONS.map((destination, index) => {
+                const isExternal =
+                  destination.external ||
+                  destination.href.startsWith("http");
+
+                return (
+                  <li
+                    key={destination.label}
+                    className="inline-flex items-center"
                   >
-                    {destination.label}
-                  </a>
-                  {index < FOOTER_DESTINATIONS.length - 1 && (
-                    <span className="mx-2 text-white/25" aria-hidden="true">
-                      ·
-                    </span>
-                  )}
-                </li>
-              ))}
+                    <a
+                      href={destination.href}
+                      {...(isExternal
+                        ? {
+                            target: "_blank",
+                            rel: "noopener noreferrer",
+                          }
+                        : {
+                            onClick: (
+                              event: React.MouseEvent<HTMLAnchorElement>,
+                            ) => handleSectionLink(event, destination.href),
+                          })}
+                      className="cursor-pointer text-sm text-white/75 transition-colors duration-200 hover:text-bright-green"
+                    >
+                      {destination.label}
+                    </a>
+                    {index < FOOTER_DESTINATIONS.length - 1 && (
+                      <span className="mx-2 text-white/25" aria-hidden="true">
+                        ·
+                      </span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
 
