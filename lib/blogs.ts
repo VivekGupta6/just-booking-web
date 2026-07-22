@@ -8,6 +8,7 @@ export const BLOG_CATEGORIES = {
   stays: "Stays & hotels",
   flights: "Flights",
   itineraries: "Itineraries",
+  "visa-guides": "Visa requirement checker",
 } as const;
 
 export type BlogCategory = keyof typeof BLOG_CATEGORIES;
@@ -118,6 +119,10 @@ export function getCategorySections(
     itineraries: {
       description:
         "Plan the perfect trip with day-by-day guides for popular countries and cities.",
+    },
+    "visa-guides": {
+      description:
+        "Check visa rules, documents, and entry tips for popular destinations before you book.",
     },
   };
 
