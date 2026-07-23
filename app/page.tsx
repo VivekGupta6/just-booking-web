@@ -4,6 +4,7 @@ import CarRentalsSection from "@/components/home/CarRentalsSection";
 import FlightHotelSection from "@/components/home/FlightHotelSection";
 import FlightsSection from "@/components/home/FlightsSection";
 import HeroNavigation from "@/components/home/HeroNavigation";
+import PopularBlogsSection from "@/components/home/PopularBlogsSection";
 import PromoHeroCard from "@/components/home/PromoHeroCard";
 import StaysSection from "@/components/home/StaysSection";
 import GsapPageEffects from "@/components/motion/GsapPageEffects";
@@ -38,6 +39,8 @@ export default function Home() {
 
           return null;
         })}
+
+        <PopularBlogsSection />
       </main>
 
       <Footer />

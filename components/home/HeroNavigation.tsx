@@ -112,7 +112,7 @@ export default function HeroNavigation() {
         data-animate-hero-item
         className="text-center text-[clamp(2rem,8vw,4rem)] font-bold leading-[1.05] tracking-tight text-primary-green"
       >
-        Where to?
+        Plan your next escape...
       </h1>
 
       <nav
@@ -137,13 +137,19 @@ export default function HeroNavigation() {
               )}
             >
               <Icon className="h-4 w-4 sm:h-5 sm:w-5" aria-hidden="true" />
-              <span className="text-center leading-tight">{section.tabLabel}</span>
+              <span className="text-center leading-tight">
+                {section.tabLabel}
+              </span>
             </button>
           );
         })}
       </nav>
 
-      <div ref={containerRef} data-animate-hero-item className="relative mt-5 sm:mt-6 md:mt-8">
+      <div
+        ref={containerRef}
+        data-animate-hero-item
+        className="relative mt-5 sm:mt-6 md:mt-8"
+      >
         <div className="flex items-center gap-2 rounded-full border border-border-green bg-white p-2 pl-4 shadow-sm transition-[box-shadow,border-color] focus-within:border-primary-green focus-within:shadow-[0_0_0_3px_rgba(0,59,42,0.12)] sm:gap-4 sm:pl-5">
           <div className="flex min-h-11 min-w-0 flex-1 items-center gap-2 sm:gap-3">
             <Search
@@ -188,7 +194,7 @@ export default function HeroNavigation() {
                   : undefined
               }
               placeholder="Search countries, hotels, flights, stays…"
-              className="min-w-0 flex-1 border-0 bg-transparent text-xs text-primary-green shadow-none outline-none ring-0 placeholder:text-muted focus:border-0 focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 sm:text-sm md:text-base"
+              className="min-w-0 flex-1 border-0 bg-transparent text-base text-primary-green shadow-none outline-none ring-0 placeholder:text-muted focus:border-0 focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0"
             />
           </div>
 

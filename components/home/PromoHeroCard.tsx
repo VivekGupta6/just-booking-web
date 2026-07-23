@@ -29,21 +29,21 @@ export default function PromoHeroCard() {
 
           <div className="flex flex-col items-center justify-center border-t border-border-green px-5 py-8 text-center sm:px-8 sm:py-10 md:border-t md:px-10 md:py-12 lg:border-t-0 lg:p-10">
             <h2 className="max-w-md text-[clamp(1.75rem,5.5vw,3.25rem)] font-bold leading-[1.08] tracking-tight text-primary-green">
-              Find stays
+              Sleep well,
               <br />
-              that fit every
+              wherever you
               <br />
-              kind of trip
+              wander
             </h2>
-            <p className="mt-3 max-w-sm text-sm leading-relaxed text-primary-green/80 sm:mt-4 sm:text-base">
-              Compare hotels and stays across top destinations.
+            <p className="mt-3 max-w-sm text-sm font-medium leading-relaxed text-primary-green/85 sm:mt-4 sm:text-base">
+              Discover stays that feel right — from city hotels to quiet getaways.
             </p>
             <button
               type="button"
               onClick={() => scrollToSection("stays")}
-              className="mt-5 inline-flex min-h-11 w-full max-w-xs items-center justify-center rounded-full bg-primary-green px-8 py-3 text-sm font-semibold text-white transition-[transform,filter] duration-200 hover:scale-[1.02] hover:brightness-110 sm:mt-6 sm:w-auto"
+              className="mt-5 inline-flex min-h-11 w-full max-w-xs items-center justify-center rounded-full bg-primary-green px-8 py-3 text-sm font-bold text-white transition-[transform,filter] duration-200 hover:scale-[1.02] hover:brightness-110 sm:mt-6 sm:w-auto"
             >
-              Book now
+              Explore stays
             </button>
           </div>
         </div>

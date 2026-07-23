@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import BubbleCursor from "@/components/motion/BubbleCursor";
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
@@ -74,6 +75,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full overflow-x-hidden bg-background text-primary-green">
+        <BubbleCursor />
         {children}
       </body>
     </html>

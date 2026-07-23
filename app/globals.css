@@ -10,6 +10,7 @@
   --muted-text: #6b6b6b;
   --placeholder-bg: #e9ecea;
   --border-green: rgba(0, 59, 42, 0.35);
+  --scrollbar-track: #dcefe7;
 }
 
 @theme inline {
@@ -48,6 +49,36 @@ body {
   font-family: "Trip Sans", Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   margin: 0;
+}
+
+/* Custom scrollbar — Firefox (width approx. thin ≈ 10px) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-green) var(--scrollbar-track);
+}
+
+/* Custom scrollbar — Chromium / Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--primary-green);
+  border-radius: 999px;
+  border: 2px solid var(--scrollbar-track);
+  background-clip: padding-box;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--deep-green);
+  border: 2px solid var(--scrollbar-track);
+  background-clip: padding-box;
 }
 
 img,
@@ -120,3 +151,81 @@ a[aria-disabled="true"] {
 .animate-modal-in {
   animation: modal-in 220ms ease-out;
 }
+
+/* Custom bubble cursor (desktop / fine pointer only) */
+@media (pointer: fine) {
+  html.has-bubble-cursor,
+  html.has-bubble-cursor * {
+    cursor: none !important;
+  }
+}
+
+.bubble-cursor {
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 120ms ease;
+}
+
+.bubble-cursor-ring,
+.bubble-cursor-dot,
+.bubble-cursor-hand {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* Default: green ring + solid green dot */
+.bubble-cursor-ring {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1.5px solid var(--bright-green);
+  background: transparent;
+  transition:
+    width 180ms ease,
+    height 180ms ease,
+    border 180ms ease,
+    background 180ms ease;
+}
+
+.bubble-cursor-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 999px;
+  background: var(--primary-green);
+  opacity: 1;
+  transition: opacity 140ms ease, background 140ms ease;
+}
+
+.bubble-cursor-hand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.35));
+  transition: opacity 140ms ease;
+}
+
+.bubble-cursor-hand svg {
+  display: block;
+}
+
+/* Pointer (clickable): dark translucent bubble + white hand */
+.bubble-cursor[data-mode="pointer"] .bubble-cursor-ring {
+  width: 56px;
+  height: 56px;
+  border: none;
+  background: rgba(0, 0, 0, 0.38);
+}
+
+.bubble-cursor[data-mode="pointer"] .bubble-cursor-dot {
+  opacity: 0;
+}
+
+.bubble-cursor[data-mode="pointer"] .bubble-cursor-hand {
+  opacity: 1;
+}
+

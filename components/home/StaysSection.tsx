@@ -22,7 +22,7 @@ export default function StaysSection() {
     <section
       id="stays"
       data-animate-section
-      className="scroll-mt-20 border-t border-border-green/60 py-10 sm:scroll-mt-24 sm:py-14 md:py-16 lg:py-20"
+      className="scroll-mt-20 py-10 sm:scroll-mt-24 sm:py-14 md:py-16 lg:py-20"
       aria-labelledby="stays-heading"
     >
       <div className="mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8">

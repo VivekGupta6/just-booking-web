@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { X } from "lucide-react";
-import { DRAWER_NAV_ITEMS } from "@/lib/constants";
+import { DRAWER_NAV_ITEMS, DRAWER_PARTNER_LINKS, POPULAR_BLOG_LINKS } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 type MobileMenuDrawerProps = {
@@ -69,27 +69,76 @@ export default function MobileMenuDrawer({
           </button>
         </div>
 
-        <nav className="flex flex-1 flex-col overflow-y-auto px-3 py-3 sm:px-4 sm:py-4">
-          {DRAWER_NAV_ITEMS.map((item) => {
-            const isActive =
-              item.href === "/"
-                ? pathname === "/"
-                : pathname.startsWith(item.href);
+        <nav className="flex flex-1 flex-col overflow-y-auto px-4 py-4 sm:px-5 sm:py-5">
+          <div className="flex flex-col gap-1">
+            {DRAWER_NAV_ITEMS.map((item) => {
+              const isActive =
+                item.href === "/"
+                  ? pathname === "/"
+                  : pathname.startsWith(item.href);
 
-            return (
-              <Link
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  onClick={onClose}
+                  className={cn(
+                    "flex min-h-12 items-center rounded-xl px-3.5 text-base font-bold tracking-tight transition-colors duration-200 hover:bg-primary-green/5",
+                    isActive ? "text-bright-green" : "text-primary-green",
+                  )}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="my-5 border-t border-border-green/50" />
+
+          <p className="mb-3 px-3.5 text-xs font-bold uppercase tracking-wider text-muted">
+            Popular blogs
+          </p>
+
+          <div className="flex flex-col gap-1.5">
+            {POPULAR_BLOG_LINKS.map((item) => {
+              const isActive = pathname === item.href;
+
+              return (
+                <Link
+                  key={item.label}
+                  href={item.href}
+                  onClick={onClose}
+                  className={cn(
+                    "flex min-h-12 items-center rounded-xl px-3.5 text-[15px] font-semibold leading-snug transition-colors duration-200 hover:bg-primary-green/5",
+                    isActive ? "text-bright-green" : "text-primary-green",
+                  )}
+                >
+                  {item.label}
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="my-5 border-t border-border-green/50" />
+
+          <p className="mb-3 px-3.5 text-xs font-bold uppercase tracking-wider text-muted">
+            Travel sites
+          </p>
+
+          <div className="flex flex-col gap-1.5 pb-4">
+            {DRAWER_PARTNER_LINKS.map((item) => (
+              <a
                 key={item.label}
                 href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={onClose}
-                className={cn(
-                  "flex min-h-11 items-center rounded-xl px-3 text-base font-semibold transition-colors duration-200 hover:bg-primary-green/5",
-                  isActive ? "text-bright-green" : "text-primary-green",
-                )}
+                className="flex min-h-12 items-center rounded-xl px-3.5 text-[15px] font-semibold leading-snug text-primary-green transition-colors duration-200 hover:bg-primary-green/5"
               >
                 {item.label}
-              </Link>
-            );
-          })}
+              </a>
+            ))}
+          </div>
         </nav>
       </aside>
     </>

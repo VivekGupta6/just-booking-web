@@ -1,4 +1,5 @@
 import blogsData from "@/data/blogs.json";
+import { POPULAR_BLOG_LINKS } from "@/lib/constants";
 
 export const BLOG_CATEGORIES = {
   "travel-recommendations": "Travel recommendations",
@@ -48,6 +49,21 @@ export function getAllBlogs(): Blog[] {
 
 export function getBlogBySlug(slug: string): Blog | undefined {
   return BLOGS.find((blog) => blog.slug === slug);
+}
+
+export type PopularBlogLink = {
+  label: string;
+  href: string;
+  blog: Blog;
+};
+
+export function getPopularBlogs(): PopularBlogLink[] {
+  return POPULAR_BLOG_LINKS.flatMap((item) => {
+    const slug = item.href.replace(/^\/news\//, "");
+    const blog = getBlogBySlug(slug);
+    if (!blog) return [];
+    return [{ label: item.label, href: item.href, blog }];
+  });
 }
 
 export function getFeaturedBlog(): Blog | undefined {
